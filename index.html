@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="rsicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentSoundly: Be an Informed Tenant in Seattle</title>
+  </head>
+  <body>
+  <header>
+    <div class="title"><img src="rsicon.png" class="header-icon">Rent Soundly</div>
+  </header>
+  <div class="container">
+
+    <div class="left-pane">
+    <div class="property-info">
+    <form class="search-form">
+      <div class="search-bar">
+        <div class="search-box">
+          <input type="text" placeholder="Search an Address" class="search-input">
+        </div>
+            <div class="autocomplete-sugg">
+          </div>
+      </div>
+    <input type="image" class="search-icon" id="search-icon-submit" src="searchicon.png">
+    </form>
+      <div class="property-info-box">
+        <h2 class="property-info-header">Property Information</h2>
+        <table class="property-info-table">
+          <tr>
+            <td class="datatable-label">Address: </td>
+            <td class="datatable-entry" id="data-addr"></td>
+          </tr>
+          <tr>
+            <td class="datatable-label">City: </td>
+            <td class="datatable-entry" id="data-city"></td>
+          </tr>
+          <tr>
+            <td class="datatable-label">State: </td>
+            <td class="datatable-entry" id="data-state"></td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Zipcode: </td>
+            <td class="datatable-entry" id="data-zip"></td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Property Name: </td>
+            <td class="datatable-entry" id="data-name"></td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Housing Units: </td>
+            <td class="datatable-entry" id="data-units"></td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Property Manager: </td>
+            <td class="datatable-entry" id="data-contact"></td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Code Issues: </td>
+            <td class="datatable-entry" id="data-code-cnt"></td>
+          </tr>
+    </table>
+    </div>
+    </div>
+    </div>
+  <div class="right-pane">
+    <div id="map"></div>
+    <div class="related-prop">
+    <h2 class="related-prop">Related Properties</h2>
+    <select class="related-prop-list" id="related-prop-select" size="6">
+    </select>
+    </div>
+    <script type="module" src="./main.js"></script>
+    </div>
+    </div>
+    <div class="container">
+  <div class="bottom-panel">
+  <div class="code-issues">
+    <h2 class="code-issues-title">Code Issues</h2>
+    <div class="code-table">
+      <table class="code-table" id="code-issues-table">
+        <thead>
+        <tr class="code-table-heading">
+          <td class="code-table-heading" id="code-heading-date">Date</td>
+          <td class="code-table-heading" id="code-heading-type">Type</td>
+          <td class="code-table-heading" id="code-heading-cat">Category</td>
+          <td class="code-table-heading" id="code-heading-desc">Description</td>
+          </tr>
+        </thead>
+        <tbody class="code-table-body">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+      </div>
+  </body>
+</html>

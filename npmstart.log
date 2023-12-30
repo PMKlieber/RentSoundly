@@ -1,0 +1,7 @@
+
+> pgappc@0.0.0 start
+> node ./index.js
+
+11:43:45 AM [vite-express] Running in development mode
+11:43:46 AM [vite-express] Using Vite to resolve the config file
+Server is listening...

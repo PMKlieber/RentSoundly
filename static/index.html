@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using OpenLayers with Vite</title>
+  </head>
+  <body>
+  <header>
+    <div class="title"><img src="rsicon.png" class="header-icon">Rent Soundly</div>
+  </header>
+  <div class="container">
+  <div class="left-pane">
+    <div class="search-form">
+      <div class="search-bar">
+        <div class="search-box">
+          <input type="text" placeholder="Search an Address" class="search-input">
+        </div>
+            <div class="autocomplete-sugg">
+          </div>
+      </div>
+    <img class="search-icon" src="searchicon.png">
+    </div>
+    <div>
+    <div id="map"></div>
+    <div class="related-prop">
+    <h2 class="related-prop">Related Properties</h2>
+    <select class="related-prop-list" id="related-prop-select" size="6">
+      <option>Test</option>
+      <option>TEst 2</option>
+    </select>
+    </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+    </div>
+    <div class="property-info">
+      <div class="property-info-box">
+        <h2 class="property-info-header">Property Information</h2>
+        <table class="property-info-table">
+          <tr>
+            <td class="datatable-label">Address: </td>
+            <td class="datatable-entry" id="data-addr">2232</td>
+          </tr>
+          <tr>
+            <td class="datatable-label">City: </td>
+            <td class="datatable-entry" id="data-city"> Seattle </td>
+          </tr>
+          <tr>
+            <td class="datatable-label">State: </td>
+            <td class="datatable-entry" id="data-state">Washington</td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Zipcode: </td>
+            <td class="datatable-entry" id="data-zip">98101</td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Property Name: </td>
+            <td class="datatable-entry" id="data-name">The Apartment Flats</td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Housing Units: </td>
+            <td class="datatable-entry" id="data-units">2232</td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Property Manager: </td>
+            <td class="datatable-entry" id="data-contact">Wallace Landlord</td>
+          </tr>
+          <tr>
+            <td class="datatable-label">Code Issues: </td>
+            <td class="datatable-entry" id="data-code-cnt">6</td>
+          </tr>
+    </table>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+  <div class="bottom-panel">
+  <div class="code-issues">
+    <h2 class="code-issues-title">Code Issues</h2>
+    <div class="code-table">
+      <table class="code-table" id="code-issues-table">
+        <thead>
+        <tr class="code-table-heading">
+          <td class="code-table-heading" id="code-heading-date">Date</td>
+          <td class="code-table-heading" id="code-heading-type">Type</td>
+          <td class="code-table-heading" id="code-heading-cat">Category</td>
+          <td class="code-table-heading" id="code-heading-desc">Description</td>
+          </tr>
+        </thead>
+        <tbody class="code-table-body">
+        <tr>
+        <td>test</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+      </div>
+  </body>
+</html>
